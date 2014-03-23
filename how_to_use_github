@@ -14,25 +14,24 @@ githubÊÇ·şÎñ¶Ë£¬ÒªÏëÔÚ×Ô¼ºµçÄÔÉÏÊ¹ÓÃgitÎÒÃÇ»¹ĞèÒªÒ»¸ögit¿Í»§¶Ë£¬ÎÒÕâÀïÑ¡ÓÃmsysgi
 
 Ê×ÏÈÔÚ±¾µØ´´½¨ssh key£»
 
-1
+
 $ ssh-keygen -t rsa -C "your_email@youremail.com"
 ºóÃæµÄyour_email@youremail.com¸ÄÎªÄãµÄÓÊÏä£¬Ö®ºó»áÒªÇóÈ·ÈÏÂ·¾¶ºÍÊäÈëÃÜÂë£¬ÎÒÃÇÕâÊ¹ÓÃÄ¬ÈÏµÄÒ»Â·»Ø³µ¾ÍĞĞ¡£³É¹¦µÄ»°»áÔÚ~/ÏÂÉú³É.sshÎÄ¼ş¼Ğ£¬½øÈ¥£¬´ò¿ªid_rsa.pub£¬¸´ÖÆÀïÃæµÄkey¡£
 
 »Øµ½github£¬½øÈëAccount Settings£¬×ó±ßÑ¡ÔñSSH Keys£¬Add SSH Key,titleËæ±ãÌî£¬Õ³Ìùkey¡£ÎªÁËÑéÖ¤ÊÇ·ñ³É¹¦£¬ÔÚgit bashÏÂÊäÈë£º
 
-1
+
 $ ssh -T git@github.com
 Èç¹ûÊÇµÚÒ»´ÎµÄ»áÌáÊ¾ÊÇ·ñcontinue£¬ÊäÈëyes¾Í»á¿´µ½£ºYou¡¯ve successfully authenticated, but GitHub does not provide shell access ¡£Õâ¾Í±íÊ¾ÒÑ³É¹¦Á¬ÉÏgithub¡£
 
 ½ÓÏÂÀ´ÎÒÃÇÒª×öµÄ¾ÍÊÇ°Ñ±¾µØ²Ö¿â´«µ½githubÉÏÈ¥£¬ÔÚ´ËÖ®Ç°»¹ĞèÒªÉèÖÃusernameºÍemail£¬ÒòÎªgithubÃ¿´Îcommit¶¼»á¼ÇÂ¼ËûÃÇ¡£
 
-1
-2
+
 $ git config --global user.name "your name"
 $ git config --global user.email "your_email@youremail.com"
 ½øÈëÒªÉÏ´«µÄ²Ö¿â£¬ÓÒ¼ügit bash£¬Ìí¼ÓÔ¶³ÌµØÖ·£º
 
-1
+
 $ git remote add origin git@github.com:yourName/yourRepo.git
 ºóÃæµÄyourNameºÍyourRepo±íÊ¾ÄãÔÙgithubµÄÓÃ»§ÃûºÍ¸Õ²ÅĞÂ½¨µÄ²Ö¿â£¬¼ÓÍêÖ®ºó½øÈë.git£¬´ò¿ªconfig£¬ÕâÀï»á¶à³öÒ»¸öremote ¡°origin¡±ÄÚÈİ£¬Õâ¾ÍÊÇ¸Õ²ÅÌí¼ÓµÄÔ¶³ÌµØÖ·£¬Ò²¿ÉÒÔÖ±½ÓĞŞ¸ÄconfigÀ´ÅäÖÃÔ¶³ÌµØÖ·¡£
 
@@ -40,13 +39,12 @@ $ git remote add origin git@github.com:yourName/yourRepo.git
 
 ½ÓÏÂÀ´ÔÚ±¾µØ²Ö¿âÀïÌí¼ÓÒ»Ğ©ÎÄ¼ş£¬±ÈÈçREADME£¬
 
-1
-2
+
 $ git add README
 $ git commit -m "first commit"
 ÉÏ´«µ½github£º
 
-1
+
 $ git push origin master
 git pushÃüÁî»á½«±¾µØ²Ö¿âÍÆËÍµ½Ô¶³Ì·şÎñÆ÷¡£
 git pullÃüÁîÔòÏà·´¡£
@@ -57,9 +55,7 @@ git pullÃüÁîÔòÏà·´¡£
 
 .gitignore¹ËÃûË¼Òå¾ÍÊÇ¸æËßgitĞèÒªºöÂÔµÄÎÄ¼ş£¬ÕâÊÇÒ»¸öºÜÖØÒª²¢ÇÒºÜÊµÓÃµÄÎÄ¼ş¡£Ò»°ãÎÒÃÇĞ´Íê´úÂëºó»áÖ´ĞĞ±àÒë¡¢µ÷ÊÔµÈ²Ù×÷£¬ÕâÆÚ¼ä»á²úÉúºÜ¶àÖĞ¼äÎÄ¼şºÍ¿ÉÖ´ĞĞÎÄ¼ş£¬ÕâĞ©¶¼²»ÊÇ´úÂëÎÄ¼ş£¬ÊÇ²»ĞèÒªgitÀ´¹ÜÀíµÄ¡£ÎÒÃÇÔÚgit statusµÄÊ±ºò»á¿´µ½ºÜ¶àÕâÑùµÄÎÄ¼ş£¬Èç¹ûÓÃgit add -AÀ´Ìí¼ÓµÄ»°»á°ÑËûÃÇ¶¼¼Ó½øÈ¥£¬¶øÊÖ¶¯Ò»¸ö¸öÌí¼ÓµÄ»°Ò²Ì«Âé·³ÁË¡£ÕâÊ±ÎÒÃÇ¾ÍĞèÒª.gitignoreÁË¡£±ÈÈçÒ»°ãc#µÄÏîÄ¿ÎÒµÄ.gitignoreÊÇÕâÑùĞ´µÄ£º
 
-1
-2
-3
+
 bin
 *.suo
 obj
@@ -72,34 +68,30 @@ binºÍobjÊÇ±àÒëÄ¿Â¼£¬ÀïÃæ¶¼²»ÊÇÔ´´úÂë£¬ºöÂÔ£»suoÎÄ¼şÊÇvs2010µÄÅäÖÃÎÄ¼ş£¬²»ĞèÒª¡£Õ
 6.1²é¿´tag
 ÁĞ³öËùÓĞtag£º
 
-1
+
 git tag
 ÕâÑùÁĞ³öµÄtagÊÇ°´×ÖÄ¸ÅÅĞòµÄ£¬ºÍ´´½¨Ê±¼äÃ»¹ØÏµ¡£Èç¹ûÖ»ÊÇÏë²é¿´Ä³Ğ©tagµÄ»°£¬¿ÉÒÔ¼ÓÏŞ¶¨£º
 
-1
+
 git tag -l v1.*
 ÕâÑù¾ÍÖ»»áÁĞ³ö1.¼¸µÄ°æ±¾¡£
 
 6.2´´½¨tag
 ´´½¨ÇáÁ¿¼¶tag£º
 
-1
+
 git tag v1.0
 ÕâÑù´´½¨µÄtagÃ»ÓĞ¸½´øÆäËûĞÅÏ¢£¬ÓëÖ®ÏàÓ¦µÄÊÇ´øĞÅÏ¢µÄtag£º
 
-1
+
 git tag -a v1.0 -m 'first version'
 -mºóÃæ´øµÄ¾ÍÊÇ×¢ÊÍĞÅÏ¢£¬ÕâÑùÔÚÈÕºó²é¿´µÄÊ±ºò»áºÜÓĞÓÃ£¬ÕâÖÖÊÇÆÕÍ¨tag£¬»¹ÓĞÒ»ÖÖÓĞÇ©ÃûµÄtag£º
 
-1
+
 git tag -s v1.0 -m 'first version'
 Ç°ÌáÊÇÄãÓĞGPGË½Ô¿£¬°ÑÉÏÃæµÄa»»³És¾ÍĞĞÁË¡£³ıÁË¿ÉÒÔÎªµ±Ç°µÄ½ø¶ÈÌí¼Ótag£¬ÎÒÃÇ»¹¿ÉÒÔÎªÒÔÇ°µÄcommitÌí¼Ótag£º
 
-1
-2
-3
-4
-5
+
 #Ê×ÏÈ²é¿´ÒÔÇ°µÄcommit
 git log --oneline 
 #¼ÙÈçÓĞÕâÑùÒ»¸öcommit£º8a5cbc2 updated readme
@@ -108,15 +100,15 @@ git tag -a v1.1 8a5cbc2
 6.3É¾³ıtag
 ºÜ¼òµ¥£¬ÖªµÀtagÃû³Æºó£º
 
-1
+
 git tag -d v1.0
 6.4ÑéÖ¤tag
 Èç¹ûÄãÓĞGPGË½Ô¿µÄ»°¾Í¿ÉÒÔÑéÖ¤tag£º
 
-1
+
 git tag -v v1.0
 6.5¹²Ïítag
 ÎÒÃÇÔÚÖ´ĞĞgit pushµÄÊ±ºò£¬tagÊÇ²»»áÉÏ´«µ½·şÎñÆ÷µÄ£¬±ÈÈçÏÖÔÚµÄgithub£¬´´½¨tagºógit push£¬ÔÚgithubÍøÒ³ÉÏÊÇ¿´²»µ½tagµÄ£¬ÎªÁË¹²ÏíÕâĞ©tag£¬Äã±ØĞëÕâÑù£º
 
-1
+
 git push origin --tags
